@@ -1,0 +1,30 @@
+<p>ejer1 works!</p>
+
+<hr/>
+
+<p>Dad una lista de numeros muestra por pantalla solo los impares</p>
+
+<div>
+    @for (numero of numeros; track $index) {
+        @if (numero%2!==0) {
+            {{numero}},
+        }
+    }@empty {
+        No hay numeros
+    }
+    
+</div>
+
+<div>
+    @for (numero of getOdds(); track $index) {
+        @if (numero%2!==0) {
+            {{numero}},
+        }
+    }@empty {
+        No hay numeros
+    }
+    
+</div>
+
+
+

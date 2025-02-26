@@ -1,0 +1,12 @@
+<!--if moderno-->>
+<div>
+    <p>Numero vale: {{numero}}</p>
+</div>
+<button (click)="incrementa()">Incremenar</button>
+<button (click)="decrementa()">Decremenar</button>
+
+@if(isOdd()){
+    <p>Es impar</p>
+}@else{
+    <p>Es par</p>
+}

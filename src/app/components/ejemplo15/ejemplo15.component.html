@@ -1,0 +1,6 @@
+<p>ejemplo15 works!</p>
+
+<hr/>
+
+<div *ngIf="user.isAdmin else noPermisos">Eres admin</div>
+<ng-template #noPermisos>No eres administrador</ng-template>

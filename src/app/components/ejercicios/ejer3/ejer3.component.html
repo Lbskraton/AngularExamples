@@ -1,0 +1,14 @@
+<p>ejer3 works!</p>
+
+<hr/>
+
+<p>Formulario que permita introducir la altura y peso de una persona y muestre en respuesta su IMC</p>
+
+<!--Formulario normal-->
+<form (ngSubmit)="handleSubmit()">
+    <input type="number" name="email" [(ngModel)]="altura">
+    <input type="number" name="password" [(ngModel)]="peso">
+    <button>Calcular IMC</button>
+</form>
+
+

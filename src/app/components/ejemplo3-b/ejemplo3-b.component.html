@@ -1,0 +1,18 @@
+
+<hr/>
+@for(profe of profes;track profe){
+    <p>{{profe}}</p> 
+}@empty{
+    <p>No hay profesores</p>
+}
+<hr/>
+@for(prod of productos; track prod.id){
+    <p>{{prod.nombre}}</p> 
+}@empty{
+    <p>No hay productos/p>
+}
+<hr/>
+@for(dato of usuario | keyvalue;track dato.key){
+    <p>{{dato.key}} {{dato.value}}  {{dato | json}}</p>
+}
+<hr/>

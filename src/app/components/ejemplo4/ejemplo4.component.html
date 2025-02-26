@@ -1,0 +1,9 @@
+<!--If, condicionales-->
+
+
+<p>El numero vale : {{numero}}</p>
+<button (click)="incrementa()">Incrementar</button>
+<button (click)="decrementa()">decrementar</button>
+
+<p *ngIf="numero%2!==0" >es impar</p>
+<p *ngIf="isOdd()" >es par</p>

@@ -1,0 +1,41 @@
+<p>ejer3-b works!</p>
+
+<hr/>
+
+<form [formGroup]="form" (ngSubmit)="handleSubmit()">
+    <label for="altura">altura:</label>
+    <input name="altura" formControlName="altura"/>
+    @if(form.get('altura')?.invalid && form.get('altura')?.dirty){
+        <small>
+            <p [style.color]="'red'">
+                El campo es invalido: 
+                @if(form.get('altura')?.hasError('required')){
+                    El campo es obligatorio
+                }
+                
+
+            </p>
+            
+        </small>
+
+    }
+    <label for="peso">Email:</label>
+    <input name="peso" formControlName="peso"/>
+
+    @if(form.get('peso')?.invalid && form.get('peso')?.dirty){
+        <small>
+            <p [style.color]="'red'">
+                El campo es invalido: 
+                @if(form.get('peso')?.hasError('required')){
+                    El campo es obligatorio
+                }
+                
+
+            </p>
+            
+        </small>
+
+    }
+    <button [disabled]="form.invalid">Enviar</button>
+
+    <div>IMC:{{imc | number}}</div>
