@@ -1,0 +1,16 @@
+<p>ejer4 works!</p>
+
+<hr/>
+
+<div>
+    @for(superheroe of superheroes$ | async; track superheroe.id){
+        <div>{{superheroe.nombre}}</div>
+        <img [src]="superheroe.fotoUrl" width="200px"/>
+        <div>Superpoderes: {{superheroe.superPoderes.join(',')}}</div>
+        <button (click)="handleDelete(superheroe.id)">Eliminar</button>
+    }@empty{
+        <p>No hay superheroes</p>
+    }
+</div>
+
+

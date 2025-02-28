@@ -28,6 +28,8 @@ import { Ejer1Component } from './components/ejercicios/ejer1/ejer1.component';
 import { Ejer3Component } from './components/ejercicios/ejer3/ejer3.component';
 import { Ejer2Component } from './components/ejercicios/ejer2/ejer2.component';
 import { Ejer3BComponent } from './components/ejercicios/ejer3-b/ejer3-b.component';
+import { Ejer4Component } from './components/ejercicios/ejer4/ejer4.component';
+import { Ejer5Component } from './components/ejercicios/ejer5/ejer5.component';
 
 export const routes: Routes = [
     {path:'ejemplo0',component:Ejemplo0Component},
@@ -61,5 +63,7 @@ export const routes: Routes = [
     {path:'ejercicio2',component:Ejer2Component},
     {path:'ejercicio3',component:Ejer3Component},
     {path:'ejercicio3B',component:Ejer3BComponent},
+    {path:'ejercicio4',component:Ejer4Component},
+    {path:'ejercicio5',component:Ejer5Component},
 
 ];
